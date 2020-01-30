@@ -3,6 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import Result from './components/SearchResult';
+
+const routing = (
+  <Router>
+    <div>
+      <Route path="/SearchResult" component={Result} />
+    </div>
+  </Router>
+)
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
