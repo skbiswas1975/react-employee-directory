@@ -1,0 +1,26 @@
+[
+    {
+      "fname": "Jayne",
+      "lname": "Washington",
+      "email": "jaynewashington@exposa.com",
+      "title": "CEO"
+    },
+    {
+      "fname": "Peterson",
+      "lname": "Dalton",
+      "email": "petersondalton@exposa.com",
+      "title": "CFO"
+    },
+    {
+      "fname": "Velazquez",
+      "lname": "Calderon",
+      "email": "velazquezcalderon@exposa.com",
+      "title": "Director"
+    },
+    {
+      "fname": "Norman",
+      "lname": "Reed",
+      "email": "normanreed@exposa.com",
+      "title": "Manager - Marketting"
+    }
+  ]
