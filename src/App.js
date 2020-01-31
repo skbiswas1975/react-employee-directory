@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+import { Route, Link, MemoryRouter as Router, Switch } from 'react-router-dom';
+import EmployeeDetails from './components/SearchResult';
 
 var EmployeeData=require("./components/EmployeeData");
 
@@ -49,7 +50,7 @@ class EmpSearch extends React.Component {
                 <tbody>
                 {filteredData.map(item => (
                   <tr>
-                    <Link to="/"><td>{item.fname} {item.lname}</td></Link>
+                    <td><Link to={item.fname + item.lname}>{item.fname} {item.lname}</Link></td>
                     <td>{item.title}</td>
                     <td>{item.email}</td>
                   </tr>
@@ -65,7 +66,10 @@ class EmpSearch extends React.Component {
         <div class="col-sm-5" style={{border: '1px solid #e6e1e1', borderRadius: '10px!important'}}>
           <h2>Employee details</h2>
           <p>Here is the details of the selected employee:</p>
-          
+          <Switch>
+                <Route exact path="/" />
+                <Route path='/' component={EmployeeDetails}/>
+          </Switch>
         </div>
       </div>
     </Router>
