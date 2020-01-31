@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 
 class SearchResult extends React.Component {
+    
+
   render() {
+      console.log(this.props)
     return (
     <div class="row">
             <div class="col-xs-10 col-sm-10 col-md-10">
@@ -11,7 +14,7 @@ class SearchResult extends React.Component {
                             <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
                         </div>
                         <div class="col-sm-6 col-md-8">
-                            <h4>Jayne Washington</h4>
+                            <h4>{this.props.location.state}</h4>
                           
                             <h5>CEO</h5>
                             <small>
