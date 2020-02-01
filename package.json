@@ -12,7 +12,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0"
   },
-  "homepage": "https://github.com/skbiswas1975/react-employee-directory",
+  "homepage": "https://skbiswas1975.github.io/react-employee-directory/",
   "scripts":{
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
