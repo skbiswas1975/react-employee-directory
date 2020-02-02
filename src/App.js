@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Route, Link, MemoryRouter as Router, Switch } from 'react-router-dom';
 import EmployeeDetails from './components/SearchResult';
+//import SearchResult from './components/SearchResult';
 
 var EmployeeData=require("./components/EmployeeData");
 
@@ -26,7 +27,9 @@ class EmpSearch extends React.Component {
     });
 
     return (
+      
       <Router>
+        
       <div class="container-fluid" style={{padding: "3%"}}>
         <div class="col-sm-6" style={{border: '1px solid #e6e1e1', borderRadius: '10px!important'}}>
             <h2>Employee Directory</h2>
@@ -53,6 +56,7 @@ class EmpSearch extends React.Component {
                     <td><Link to={item.fname + item.lname}>{item.fname} {item.lname}</Link></td>
                     <td>{item.title}</td>
                     <td>{item.email}</td>
+                    <td><EmployeeDetails dfp={this.props.dfp} /></td>
                   </tr>
                   ))}
                 </tbody>
